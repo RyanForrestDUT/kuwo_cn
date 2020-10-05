@@ -86,6 +86,7 @@
 
 这个接口需要`cookie`头和`csrf`头，从浏览器copy一下就可以了（应该是比较`cookie`里面的`csrf`值和`csrf`头里面的值是否相同）
 
+
 #### 3.2 获取歌词的接口
 
 [http://m.kuwo.cn/newh5/singles/songinfoandlrc?musicId=80488731&reqId=xxxxxxxxxxxxxxxxxx](http://m.kuwo.cn/newh5/singles/songinfoandlrc?musicId=80488731&reqId=xxxxxxxxxxxxxxxxxx)
@@ -95,3 +96,9 @@
 ```json
 {"data":{"lrclist":[{"time":"0.0","lineLyric":"《你的答案》"},{"time":"2.46","lineLyric":"作词 Lyrics：林晨阳 刘涛"},{"time":"4.69","lineLyric":"作曲 Music：刘涛"},{"time":"7.34","lineLyric":"演唱Singer：阿冗"},{"time":"9.32","lineLyric":"制作人 Produced by 刘涛"},{"time":"12.09","lineLyric":"编曲 Arranger：谭侃侃"},{"time":"14.6","lineLyric":"吉他 Guitar：谭侃侃"},{"time":"15.15","lineLyric":"键盘 Keyboards：谭侃侃"},{"time":"17.44","lineLyric":"合声 Backing vocals：金天 胡阁"},{"time":"18.95","lineLyric":"录音棚 Recording studio：北京好乐无荒录音棚"},{"time":"19.65","lineLyric":"录音师 Recording Engineer：吴佳敏"},{"time":"20.35","lineLyric":"混音师 Mixing Engineer：刘三斤"},{"time":"21.59","lineLyric":"母带后期混音师 Mastering Engineer：刘三斤"},{"time":"22.2","lineLyric":"监制 Executive producer: 陶诗"},{"time":"23.0","lineLyric":"OP/SP：好乐无荒"},{"time":"24.0","lineLyric":"封面设计：kidult."},{"time":"24.82","lineLyric":"鸣谢：万物体验家；不要音乐"},{"time":"25.24","lineLyric":"也许世界就这样"},{"time":"28.49","lineLyric":"我也还在路上"},{"time":"31.13","lineLyric":"没有人能诉说"},{"time":"36.21","lineLyric":"也许我只能沉默"},{"time":"39.25","lineLyric":"眼泪湿润眼眶"},{"time":"42.1","lineLyric":"可又不甘懦弱"},...
 ```
+
+说明：
+程序运行需自行安装如下依赖包：
+1. pip install gevent
+2. pip install mutagen
+3. pip install requests
